@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tipcalculator.css">
+</head>
+<body>
+    <div class="box-div">
+        <h1>Tip Calculator</h1> <hr>
+        <form action="">
+            <input type="number" id="amountBill" placeholder="How Much Was Your Bill?">
+            <input type="number" id="shareBill" placeholder="How many people are sharing the bill?">
+            <select name="" id="service">
+                <option disabled selected value="0">-- How was your service? --</option>
+                <option value="0.3"> 30% - Outstanding</option>
+                <option value="0.2"> 20% - Good</option>
+                <option value="0.15"> 15% - It was okay</option>
+                <option value="0.1"> 10% - Bad</option>
+                <option value="0.05"> 5% - Terrible</option>
+            </select>
+            <button type="button" id="calculate"> Calculate! </button>
+            <div id="totalTip">
+                ₱<span id="tip">0.00</span>
+                <small id="each">each</small>
+            </div>
+        </form>
+    </div>
+    <script src="tipcalculator.js"></script>
+</body>
+</html>
